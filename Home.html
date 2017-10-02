@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hunter's Senior Project</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="tabs.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+	<div id="Container">
+	<div id="Header">
+		<ul class="Hlist">
+			<li>File</li>
+			<li>Edit</li>
+			<li>Find</li>
+			<li>View</li>
+			<li>Navigate</li>
+			<li>Debug</li>
+			<li>Help</li>
+		</ul>
+		<div class="Icons">
+			<i class="material-icons">remove</i>
+			<i class="material-icons">web_asset</i>
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+	<!--<div id="HorizontalSidebar">
+		<div class="tab-container">
+			<ul class="tabs clearfix">
+				<li class=active><a href="Home.html">Home</a></li>
+				<li><a href="Research.html">Research</a></li>
+				<li><a href="Product Documentation.html">Product Documentation</a></li>
+				<li><a href="Presentation.html">Presentation</a></li>
+			</ul>
+		</div>
+	</div>-->
+	<div id="VerticalSidebar">
+	
+	<div class="Setting">
+		<p style='color: #adb9bd; margin: 5px;float: left;font-weight: bold'>OPEN FILES</p>
+		<i class="material-icons">settings</i>
+		<i class="material-icons">folder</i>
+		<i class="material-icons">control_point</i>
+	</div>
+	<ul class="Vtab">
+		<li class=active><a href="Home.html">Home.class</a></li>
+		<li><a href="Research.html">Research.class</a></li>
+		<li><a href="Product Documentation.html">Product Documentation.class</a></li>
+		<li><a href="Presentation.html">Presentation.class</a></li>
+	</ul>
+	</div>
+	<div id="Code">
+	
+<pre style='color:#d1d1d1;'><span style='color:#e66170; font-weight:bold; '>class</span> Home
+<span style='color:#b060b0; '>{</span>
+	<span style='color:#bb7977; font-weight:bold; '>String</span> Name <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Hunter Wilkins, 2nd Period"</span><span style='color:#b060b0; '>;</span>
+	<span style='color:#bb7977; font-weight:bold; '>String</span> Profession <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Professor of Artificial Intelligence"</span><span style='color:#b060b0; '>;</span>
+	<span style='color:#bb7977; font-weight:bold; '>String</span> Research <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Artificial Intelligence: Reiging Over Economies and Societies"</span><span style='color:#b060b0; '>;</span>
+	
+	<span style='color:#e66170; font-weight:bold; '>File</span> Formal Proposal <span style='color:#d2cd86; '>=</span>
+	<iframe src="https://docs.google.com/document/d/e/2PACX-1vQUOyPqI8-DJ87-sNt4dkhrG_H_9-I0a74L3Psb0vZsfj-soY_2yRQbSAL2n2lxQVhcpeuAzVOfwmkB/pub?embedded=true"></iframe>
+<span style='color:#b060b0; '>}</span>
+</pre>
+	</div>
+		<div id="Numbers">
+		<p id="Nums"></p>
+		<script>
+			var pre = document.getElementById('Nums');
+			
+			var height = document.getElementById('Numbers').offsetHeight - 20;
+			
+			for(var i = 1; i < height / 23 + 1; i++){
+				pre.innerHTML += i + "<br>";
+				console.log(i);
+			}
+		</script>
+	</div>
+	<div id="Footer"></div>
+	</div>
+</body>
+</html> 

@@ -1,0 +1,72 @@
+.tab-container{
+	margin: 0;
+	padding: 15px 0 0 0;	
+}
+
+ul.tabs{
+	margin: 0;
+	list-style-type: none;
+	line-height: 35px;
+	max-height: 40px;
+	overflow: hidden;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+ul.tabs > li.active{
+	z-index: 2;
+	background: #85868A;
+}
+
+ul.tabs > li{
+	float: left;
+	margin: 5px -10px 0;
+	border-top-right-radius: 25px 170px;
+	border-top-left-radius: 20px 90px;
+	padding: 0 30px 0 25px;
+	height: 170px;
+	background: #656669;
+	position: relative;
+	box-shadow: 0 10px 20px rgba(0,0,0,.5);
+	max-width: 200px;
+}
+
+ul.tabs > li > a{
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	color: #cccccc;
+}
+
+ul.tabs > li:before{
+	border-color: transparent #424242 transparent transparent;
+	-webkit-transfrom: rotate(48deg);
+	left: -23px;
+}
+
+ul.tabs > li:after{
+	border-color: transparent transparent transparent #424242;
+	-webkit-transfrom: rotate(48deg);
+	right: -17px;
+}
+
+.clearfix:before, .clearfix:after{
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.clearfix{
+	zoom: 1;
+}
+
+
+
+
+
+
