@@ -3,6 +3,12 @@ pre{
 	margin: 0;
 }
 
+#nums{
+	float: left;
+	color: gray;
+	font-align: left;
+}
+
 iframe{
 	width: 750px;
 	height: 400px;
