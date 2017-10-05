@@ -1,0 +1,82 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+	  <title>Hunter's Senior Project</title>
+	
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	  <link rel="stylesheet" type="text/css" href="styles.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+	<!-- header -->
+	<header>
+	<nav>
+		<div class="nav-wrapper z-depth-1 orange darken-2">
+		    <ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li><a href="#">File</a></li>
+				<li><a href="#">Edit</a></li>
+				<li><a href="#">Find</a></li>
+				<li><a href="#">View</a></li>
+				<li><a href="#">Navigate</a></li>
+				<li><a href="#">Debug</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+		  <ul class="right hide-on-med-and-down">
+			<li><a href="#"><i class="material-icons">remove</i></a></li>
+			<li><a href="#"><i class="material-icons">picture_in_picture</i></a></li>
+			<li><a href="#"><i class="material-icons">close</i></a></li>
+		  </ul>
+		</div>
+	</nav>	
+	</header>
+	
+	<!-- Main -->
+	<main>
+		<div class="row">
+			<div id="VerticalSide" class="col s2  blue-grey darken-4">
+				<ul class="collection with-header">
+					<li class="collection-header"><h5>Open Files</h5></li>
+					<a class="collection-item amber lighten-1 waves-effect active" href="index.html">Home</a>
+					<a class="collection-item waves-effect" href="#!">Research</a>
+					<a class="collection-item waves-effect" href="#!">Production Documentation</a>
+					<a class="collection-item waves-effect" href="#!">Presentation</a>
+				</ul>
+			</div>
+	
+			<div id="Code" class="col s10 z-depth-2 grey darken-4" style="height: auto;">
+<pre style="color:#f8f8f8"><span style="color:#fbde2d">class</span> <span style="color:#ff6400">Home</span>
+{
+    <span style="color:#fbde2d">String</span> Name <span style="color:#fbde2d">=</span> <span style="color:#61ce3c">"Hunter Wilkins, 2nd Period"</span>;
+    <span style="color:#fbde2d">String</span> Profession <span style="color:#fbde2d">=</span> <span style="color:#61ce3c">"Professor of Artificial Intelligence"</span>;
+    <span style="color:#fbde2d">String</span> Research <span style="color:#fbde2d">=</span> <span style="color:#61ce3c">"Artificial Intelligence: Reigning Over Economies and Societies"</span>;
+    
+    <span style="color:#fbde2d">File</span> Formal_Proposal <span style="color:#fbde2d">=</span>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQW5Lq2UURaj3x4rfoBhUM_u4YmTSscTggCY99fx7oglTs36623Yd3-BZDGvhnXpHRj9w0dSmwcBTUh/pub?embedded=true"></iframe>
+    <span style="color:#fbde2d">File</span> Cover_Letter <span style="color:#fbde2d">=</span>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vR88EY8_YhKQxcT8_VzQLQOmUJYggMnNSSTF_I9DbfcICkDIru7nwrGSpsX3YUlTkRq89JjBdep5Fq3/pub?embedded=true"></iframe>
+    <span style="color:#fbde2d">File</span> Resume <span style="color:#fbde2d">=</span>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vR5VI0UrZvJRRIyCmHmNH0w9DbnUZg2-2bmH03QeJMjwe075kmpT_xchcMli1ni9dVMyXJbPkwbhwhJ/pub?embedded=true"></iframe>
+}
+</pre>
+			</div>
+		</div>
+	</main>
+	<!-- Footer -->
+	
+	<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+	  <script>
+		var hw = $(document).height();
+		
+		$('#VerticalSide, #Code').css({
+			height: hw
+		});
+	  </script>
+    </body>
+  </html>
