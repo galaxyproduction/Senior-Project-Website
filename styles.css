@@ -1,0 +1,28 @@
+pre{
+	font-size: 22px;
+	margin: 0;
+}
+
+iframe{
+	width: 750px;
+	height: 400px;
+}
+
+ul.collection{
+	border: none;
+}
+
+.collection.with-header .collection-header{
+	background-color: #37474f;
+	border-color: #212121;
+}
+
+.row{
+	margin: 0;
+}
+
+.collection a.collection-item{
+	color: #ffca28;
+	background-color: #37474f;
+	border-color: #212121;
+}
