@@ -3,7 +3,7 @@ pre{
 	margin: 0;
 }
 
-pre > #nums{
+#nums{
 	float: left;
 	color: gray;
 	text-align: right;
