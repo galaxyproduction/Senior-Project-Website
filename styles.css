@@ -6,7 +6,8 @@ pre{
 #nums{
 	float: left;
 	color: gray;
-	font-align: left;
+	text-align: right;
+	padding-left: 2px;
 }
 
 iframe{
