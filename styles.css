@@ -1,144 +1,28 @@
-html{
-	height: 100%;
-}
-
-body{
-	margin: 0px;
-	height: 100%;
-	font-family: Consolas, monaco, monospace;
-	font-size: 17px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 23px;
-}
-
-#Container{
-	width: 100%;
-	height: 100%;
+pre{
+	font-size: 22px;
 	margin: 0;
-}
-
-#Header{
-	width: 100%;
-	height: 7%;
-	background: #3c3f41;
-}
-
-.Hlist{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	line-height: 25px;
-	overflow: hidden;
-	display: inline-block;
-}
-
-.Hlist > li{
-	float: left;
-	padding-left: 10px;
-	padding-top: 25px;
-	font-family: 'Arvo', serif;
-	font-size: 15px;
-	color: white;
-}
-
-.Icons{
-	float: right;
-}
-
-.Icons > i {
-	color: white;
-	font-size: 20px;
-}
-
-#VerticalSidebar{
-	width: 15%;
-	height: 93%;
-	background-color: #3c3f41;
-	float: left;
-}
-
-
-.Setting > i{
-	float: right;
-	margin: 5px;
-	color: #686e73;
-}
-
-.Vtab{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	line-height: 25px;
-	overflow: hidden;
-	display: inline-block;
-}
-
-ul.Vtab > li.active{
-	background: #2d2e30;
-}
-
-ul.Vtab > li.active > a{
-	color: #3aaaf1;
-}
-
-ul.Vtab > li > a{
-	padding-left: 10px;
-	display: inline-block;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	text-decoration: none;
-	color: #adb9bd;
-}
-
-#HorizontalSidebar{
-	width: 87%;
-	height: 7.5%;
-	background: #47484b;
-	float: right;
-}
-
-#Numbers{
-	width: 3%;
-	height: calc(90% - 1px);
-	background-color: #212121;
-	float: right;
-}
-
-#Nums{
-	font-size: 20px;
-	color: #686e76;
-	padding-left: 3px;
-	text-align: right;
-}
-
-
-#Code{
-	width: 82%;
-	height: calc(90% - 1px);
-	background-color: #212121;
-	float: right;
-}
-
-#Code > pre{
-	font-size: 20px;
-	padding-left: 10px;
 }
 
 iframe{
-	width: calc(87% - 2px);
-	height: 391px;
-	padding-top: 5px;
+	width: 750px;
+	height: 400px;
+}
+
+ul.collection{
 	border: none;
 }
 
-#Footer{
-	width: 85%;
-	height: 3%;
-	background: #1c1c1e;
-	float: right;
-	border-color: #484b4c;
-	border-style: solid;
-	border-width: 1px 0 0 0;
+.collection.with-header .collection-header{
+	background-color: #37474f;
+	border-color: #212121;
+}
+
+.row{
+	margin: 0;
+}
+
+.collection a.collection-item{
+	color: #ffca28;
+	background-color: #37474f;
+	border-color: #212121;
 }
