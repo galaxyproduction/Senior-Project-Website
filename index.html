@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hunter's Senior Project</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div id=navBar>
+        <p>File</p>
+        <p>Edit</p>
+        <p>View</p>
+        <p>Selection</p>
+        <p>Find</p>
+        <p>Packages</p>
+        <p>Help</p>
+      </div><!-- End of navBar -->
+      <div id=tabs>
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="product.html">Product Documentation</a>
+        <a href="presentation.html">Presentation</a>
+        <a href=""></a>
+      </div> <!-- End of Tabs-->
+      <div id=nums></div>
+      <div id=code>
+        <pre style="margin:0;color:#f8f8f8"><span style="color:#fbde2d">class</span> <span style="color:#ff6400">Home</span>
+{
+    <span style="color:#fbde2d">String</span> Name <span style="color:#fbde2d">=</span> <span style="color:#61ce3c">"Hunter Wilkins"</span>;
+    <span style="color:#fbde2d">String</span> Profession <span style="color:#fbde2d">=</span> <span style="color:#61ce3c">"Artificial Intelligence"</span>;
+    <span style="color:#fbde2d">String</span> Research <span style="color:#fbde2d">=</span> <span style="color:#61ce3c">"Artificial Intelligence: Reigning Over Economies and Societies"</span>;
+
+    <span style="color:#fbde2d">File</span> Formal_Proposal <span style="color:#fbde2d">=</span> <span style="color:#fbde2d">new</span> <span style="color:#fbde2d">File</span>(<span style="color:#61ce3c">"Website\formalpropsal"</span>);
+    <span style="color:#fbde2d">File</span> Cover_Letter <span style="color:#fbde2d">=</span> <span style="color:#fbde2d">new</span> <span style="color:#fbde2d">File</span>(<span style="color:#61ce3c">"Website\coverletter"</span>);
+    <span style="color:#fbde2d">File</span> Resume <span style="color:#fbde2d">=</span> <span style="color:#fbde2d">new</span> <span style="color:#fbde2d">File</span>(<span style="color:#61ce3c">"Website\resume"</span>);
+    <span style="color:#fbde2d">File</span> Reflection <span style="color:#fbde2d">=</span> <span style="color:#fbde2d">new</span> <span style="color:#fbde2d">File</span>(<span style="color:#61ce3c">"Website\reflection"</span>);
+
+    <span style="color:#fbde2d">public</span> <span style="color:#fbde2d">static</span> <span style="color:#fbde2d">void</span> <span style="color:#ff6400">main</span>(<span style="color:#fbde2d">String</span>[] args) {
+      displayFile(<span style="color:#fbde2d">Formal_Proposal</span>);
+      <iframe src="https://docs.google.com/document/d/e/2PACX-1vQW5Lq2UURaj3x4rfoBhUM_u4YmTSscTggCY99fx7oglTs36623Yd3-BZDGvhnXpHRj9w0dSmwcBTUh/pub?embedded=true"></iframe>
+
+      displayFile(<span style="color:#fbde2d">Formal_Proposal</span>);
+      <iframe src="https://docs.google.com/document/d/e/2PACX-1vR88EY8_YhKQxcT8_VzQLQOmUJYggMnNSSTF_I9DbfcICkDIru7nwrGSpsX3YUlTkRq89JjBdep5Fq3/pub?embedded=true"></iframe>
+
+      displayFile(<span style="color:#fbde2d">Formal_Proposal</span>);
+      <iframe src="https://docs.google.com/document/d/e/2PACX-1vR5VI0UrZvJRRIyCmHmNH0w9DbnUZg2-2bmH03QeJMjwe075kmpT_xchcMli1ni9dVMyXJbPkwbhwhJ/pub?embedded=true"></iframe>
+
+      displayFile(<span style="color:#fbde2d">Reflection</span>);
+      <iframe src="https://docs.google.com/document/d/e/2PACX-1vSQkzXbywUwCqu2oxMw3_VxW-0XhoM5-HmJVnddjBXYQJV0brkqVD_5Lyzt7LFIPQATTvVrO_MTO1Wk/pub?embedded=true"></iframe>
+    }
+
+    <span style="color:#fbde2d">public static</span> <span style="color:#fbde2d">void</span> <span style="color:#ff6400">displayFile</span>(<span style="color:#fbde2d">File</span> f) {
+      <span style="color:#fbde2d">System</span><span style="color:#fbde2d">.</span>out<span style="color:#fbde2d">.</span>display(f);
+    }
+}</pre>
+      </div><!-- End of Code-->
+      <footer></footer>
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+      var hw = $(document).height();
+
+      for(var i = 1; i <= Math.round(hw/24); i++){
+        document.getElementById("nums").innerHTML += i + "<br/>";
+    }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hunter's Senior Project</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div id=navBar>
+        <p>File</p>
+        <p>Edit</p>
+        <p>View</p>
+        <p>Selection</p>
+        <p>Find</p>
+        <p>Packages</p>
+        <p>Help</p>
+      </div><!-- End of navBar -->
+      <div id=tabs>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="product.html" class="active">Product Documentation</a>
+        <a href="presentation.html">Presentation</a>
+        <a href=""></a>
+      </div> <!-- End of Tabs-->
+      <div id=nums></div>
+      <div id=code>
+        <pre style="margin:0px;color:#f8f8f8"><span style="color:#fbde2d">class</span> <span style="color:#ff6400">ProductDocumentation</span>
+{
+  <span style="color:#fbde2d">public</span> <span style="color:#ff6400">ProductDocumentation</span>()
+  {
+    Map(<span style="color:#fbde2d">Image</span>, <span style="color:#fbde2d">Caption</span>) gallery <span style="color:#fbde2d">=</span> <span style="color:#fbde2d">new</span> <span style="color:#fbde2d">HashMap</span>();
+    <span style="color:#fbde2d">File</span> Journals <span style="color:#fbde2d">=</span> <span style="color:#fbde2d">new</span> <span style="color:#fbde2d">File</span>(<span style="color:#61ce3c">"Website\journals"</span>);
+  }
+
+  <span style="color:#fbde2d">public</span> <span style="color:#fbde2d">void</span> <span style="color:#ff6400">documentation</span>()
+  {
+    displayFile(<span style="color:#fbde2d">Journals</span>);
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vRYg3V9E0zBtRirkFRZml9RbUnG4P4NWgLtu6t4LQggXmWOXNUiTD7UNlVIYxxyksRQEwdw4IU4st4z/pub?embedded=true"></iframe>
+
+    gallery<span style="color:#fbde2d">.stream</span>()<span style="color:#fbde2d">.display</span>();
+
+    <iframe class="slides" src="https://docs.google.com/presentation/d/e/2PACX-1vTckkSB7nnX61RnSs71VVTimE_Mp3RW4pnjIEHSiGgzrKJEqqnddnc_inBAauF9O_zIoLDRxmntA_mh/embed?start=false&loop=false&delayms=3000" frameborder="0" width="643" height="391" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+}</pre>
+      </div><!-- End of Code-->
+      <footer></footer>
+    </div>
+
+    <script>
+      var hw = $(document).height();
+
+      for(var i = 1; i <= Math.round(hw/25); i++){
+        document.getElementById("nums").innerHTML += i + "<br/>";
+    }
+  </script>
+
+
+  </body>
+</html>

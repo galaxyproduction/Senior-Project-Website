@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hunter's Senior Project</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div id=navBar>
+        <p>File</p>
+        <p>Edit</p>
+        <p>View</p>
+        <p>Selection</p>
+        <p>Find</p>
+        <p>Packages</p>
+        <p>Help</p>
+      </div><!-- End of navBar -->
+      <div id=tabs>
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="product.html">Product Documentation</a>
+        <a href="presentation.html">Presentation</a>
+        <a href=""></a>
+      </div> <!-- End of Tabs-->
+      <div id=nums></div>
+      <div id=code>
+<pre style="margin:0;color:#f8f8f8"><span style="color:#fbde2d">class</span> <span style="color:#ff6400">Research</span>
+{
+  Research()
+  {
+    <span style="color:#fbde2d">File</span> Annotated_Bibliography <span style="color:#fbde2d">= new File</span>(<span style="color:#61ce3c">"Website\annotatedbibliography"</span>);
+    <span style="color:#fbde2d">File</span> Research_Paper <span style="color:#fbde2d">= new File</span>(<span style="color:#61ce3c">"Website\researchpaper"</span>);
+  }
+
+  <span style="color:#fbde2d">public</span> <span style="color:#fbde2d">void</span> <span style="color:#ff6400">showResearch</span>(){
+    displayFile(<span style="color:#fbde2d">Annotated_Bibliography</span>);
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQE7lTwybfsCwn5E3Nq6h6rYtw8fSfr8YOMs6VySBwPTY5rf1Fzd7oUE39aMwddnyfxOmUl3mhZHY8E/pub?embedded=true"></iframe>
+
+    displayFile(<span style="color:#fbde2d">Research_Paper</span>);
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTl68oIqp6qFsQvyRwNBeJZfiN1t_N29wLBMVkAj-K18ZnUEJWRdIGDwA_l4zy_KpFKTZ8Zzt0c6uPV/pub?embedded=true"></iframe>
+  }
+}</pre>
+      </div><!-- End of Code-->
+      <footer></footer>
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+      var hw = $(document).height();
+
+      for(var i = 1; i <= Math.round(hw/25); i++){
+        document.getElementById("nums").innerHTML += i + "<br/>";
+    }
+  </script>
+  </body>
+</html>
