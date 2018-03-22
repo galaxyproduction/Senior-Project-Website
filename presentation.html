@@ -24,13 +24,26 @@
         <a href=""></a>
       </div> <!-- End of Tabs-->
       <div id=nums></div>
-      <div id=code>
+      <div id="code">
+      <pre style="margin:0px;color:#f8f8f8"><span style="color:#fbde2d">class</span> <span style="color:#ff6400">Presentation</span>
+{
+      <span style="color:#fbde2d">public</span> <span style="color:#ff6400">Presentation</span>()
+      {
+        Map(<span style="color:#fbde2d">Image</span>, <span style="color:#fbde2d">Caption</span>) powerPoint <span style="color:#fbde2d">=</span> <span style="color:#fbde2d">new</span> <span style="color:#fbde2d">HashMap</span>();
+      }
 
+      <span style="color:#fbde2d">public</span> <span style="color:#fbde2d">void</span> <span style="color:#ff6400">present</span>()
+      {
+        powerPoint<span style="color:#fbde2d">.stream</span>()<span style="color:#fbde2d">.display</span>();
+
+        <iframe class="slides" src="https://docs.google.com/presentation/d/e/2PACX-1vSBBLb3MSr0JRDq_Zhz4ll3M8bkUgxR6opgUSNz0xFp1uy52AXe49JmNEkPwZMGJMF98HwoaE4ILv1_/embed?start=false&loop=false&delayms=3000" frameborder="0" width="643" height="391" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      }
+}</pre>
       </div><!-- End of Code-->
       <footer></footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script>
       var hw = $(document).height();
 
@@ -40,3 +53,4 @@
   </script>
   </body>
 </html>
+
